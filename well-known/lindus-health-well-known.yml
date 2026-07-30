@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of the lindushealth.com well-known surface
+host: https://www.lindushealth.com
+notes: >-
+  No /.well-known/ discovery surface is published. Probed 2026-07-19; every
+  document returned 404. Recorded so re-runs do not re-probe blindly. Absence is
+  a valid result — Lindus Health operates no public API host (api., developer.
+  and docs. subdomains do not resolve).
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+hosts_unresolved:
+- api.lindushealth.com
+- developer.lindushealth.com
+- docs.lindushealth.com
+- app.lindushealth.com
+- trust.lindushealth.com
+- status.lindushealth.com

@@ -1,0 +1,55 @@
+generated: '2026-07-19'
+method: derived
+source: https://github.com/LindusHealth + https://www.lindushealth.com/capabilities
+notes: >-
+  Lindus Health publishes no OpenAPI and no public API, so the usual API-side
+  standards (OAuth2, OIDC, RFC 9457, JSON:API, pagination, idempotency) are not
+  assessable — recorded as unknown rather than false. The standards that ARE
+  evidenced are clinical-data-interchange standards, derived from the company's
+  own open-source repositories and the CDISC affiliation displayed on the
+  marketing site. No published certification program (SOC 2 / ISO 27001 / HIPAA
+  attestation) was found on the public site as of 2026-07-19, so no Compliance
+  pointer is emitted.
+standards:
+- id: cdisc-sdtm
+  conforms: true
+  evidence: >-
+    LindusHealth/django-sdtm-export is a first-party MIT-licensed library that
+    exports clinical model instances "adhering to CDISC SDTM guidelines".
+- id: cdisc-dataset-json
+  conforms: true
+  evidence: >-
+    django-sdtm-export README documents CSV and Dataset-JSON as its export
+    targets.
+- id: cdisc-conformance-rules
+  conforms: true
+  evidence: >-
+    LindusHealth maintains a fork of cdisc-org/cdisc-rules-engine, the CDISC
+    open-source engine for validating datasets against CDISC conformance rules.
+- id: cdisc-membership
+  conforms: true
+  evidence: >-
+    CDISC logo displayed among affiliations on https://www.lindushealth.com/
+- id: oauth2
+  conforms: unknown
+  evidence: no public API or OpenAPI to assess
+- id: oidc
+  conforms: unknown
+  evidence: /.well-known/openid-configuration returned 404
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: no public API or OpenAPI to assess
+- id: fhir-r4
+  conforms: unknown
+  evidence: >-
+    Site describes EHR/EMR data abstraction but names no interchange standard;
+    no public evidence of a FHIR interface.
+- id: hipaa
+  conforms: unknown
+  evidence: no public compliance or trust page found
+- id: iso-27001
+  conforms: unknown
+  evidence: no published certification found on the public site
+- id: soc2
+  conforms: unknown
+  evidence: no published certification found on the public site
