@@ -1,18 +1,16 @@
 aid: lindus-health
 name: Lindus Health
-description: 'Lindus Health is a next-generation contract research organization (CRO)
-  that runs clinical trials end to end for biotech and pharmaceutical sponsors. It
-  pairs Citrus, an AI-assisted trial operating system connecting patient identification
-  through final data capture, with centralized patient identification and enrollment
-  (AI-powered EHR querying, digital pre-screening, centralized patient support), flexible
-  site models spanning site-based, hybrid and fully virtual delivery, and integrated
-  clinical services from protocol design through database lock. Its platform surface
-  covers EDC, eSource, ePRO/eCOA, eConsent and CTMS. The company operates across the
-  US, UK and Europe with APAC partnerships, employs over 160 staff, and works in cardiometabolic,
-  respiratory, psychiatry, women''s health and dermatology. Commercial engagements
-  are performance-based with milestone pricing. Lindus Health publishes no public developer
-  API, developer portal or API documentation; its public technical footprint is two
-  open-source CDISC clinical-data repositories.'
+description: Lindus Health is a next-generation contract research organization (CRO) that runs clinical
+  trials end to end for biotech and pharmaceutical sponsors. It pairs Citrus, an AI-assisted trial operating
+  system connecting patient identification through final data capture, with centralized patient identification
+  and enrollment (AI-powered EHR querying, digital pre-screening, centralized patient support), flexible
+  site models spanning site-based, hybrid and fully virtual delivery, and integrated clinical services
+  from protocol design through database lock. Its platform surface covers EDC, eSource, ePRO/eCOA, eConsent
+  and CTMS. The company operates across the US, UK and Europe with APAC partnerships, employs over 160
+  staff, and works in cardiometabolic, respiratory, psychiatry, women's health and dermatology. Commercial
+  engagements are performance-based with milestone pricing. Lindus Health publishes no public developer
+  API, developer portal or API documentation; its public technical footprint is two open-source CDISC
+  clinical-data repositories.
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -36,7 +34,7 @@ x-tier-reason: portfolio-lead
 x-api-surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-08'
 tags:
 - Company
 - Health
@@ -82,8 +80,18 @@ common:
   url: security/lindus-health-domain-security.yml
 - type: LLMsTxt
   url: llms/lindus-health-llms.txt
+- type: CookiePolicy
+  url: https://www.lindushealth.com/cookie-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/lindushealth/
+- type: Twitter
+  url: https://x.com/LindusHealth
+- type: YouTube
+  url: https://www.youtube.com/@LindusHealth
 x-enrichment:
   date: '2026-07-19'
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-merged-from:
+- lindushealth
