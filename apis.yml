@@ -11,6 +11,17 @@ description: Lindus Health is a next-generation contract research organization (
   engagements are performance-based with milestone pricing. Lindus Health publishes no public developer
   API, developer portal or API documentation; its public technical footprint is two open-source CDISC
   clinical-data repositories.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
